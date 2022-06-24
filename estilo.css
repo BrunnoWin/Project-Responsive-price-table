@@ -1,0 +1,130 @@
+/* Responsividade aparelhos */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+/* Container  da tabela de preço */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+h2 {
+  text-align: center;
+  margin: 0 auto;
+
+}
+.preco-tabela {
+  width:100%;
+  margin: 50px 0;
+  text-align: center;
+  font-family: Arial;
+  font-size: 14px;
+  color: #fff;
+}
+.preco-tabela:before,
+.preco-tabela:after {
+  content: " ";
+  display: table;
+}
+.preco-tabela:after {
+  clear: both;
+}
+.preco-tabela {
+  *zoom: 1;
+}
+.preco-tabela ul:first-child {
+  margin-left: 0;
+}
+.preco-tabela ul li {
+  padding: 10px 20px;
+}
+.col-preco {
+  list-style:none;
+  padding: 0;
+  margin: 10px 1px;
+  position: relative;
+  display: block;
+  float:left;
+  border: 1px solid #ddd;
+  background: #fff;
+  transition: all 0.2s;
+}
+@media (min-width: 768px){
+  .col-preco {
+    width: 37.7%;
+  }
+}
+@media (min-width: 992px){
+  .col-preco {
+    width: 29%;
+  }
+}
+@media (min-width: 1200px){
+  .col-preco {
+     width: 24.8%;
+  }
+}
+.col-preco:hover {
+  box-shadow: 0 0 2px 2px #1C1C1C;
+  -webkit-transform: scale(1.1,1.1);
+  transform: scale(1,1.1);
+  z-index: 1001;
+  cursor: pointer;
+}
+.col-preco.stand-out {
+  z-index: 1000;
+  box-shadow: 0 0 2px 2px #1C1C1C;
+  -webkit-transform: scale(1.1,1.1);
+  transform: scale(1,1.1);
+}
+.col-preco li:nth-child(2n+1) {
+  background: #363636;
+}
+.col-preco li:nth-child(2n) {
+   background: #4F4F4F;
+}
+
+.col-preco li.header {
+  color: #fff;/*  cor texto plano    */
+  font-size: 18px;
+  font-weight:bold;
+  background: #000000;  /*  cor fundo texto PLANO INICIAl/BASICO/PROFISSIONAL     */
+}
+.col-preco li.preco {
+  color: #333; /*  cor texto valor exemplo $10,00    */
+  background: #fff; /*  cor fundo texto valor exemplo $10,00    */
+}
+.col-preco .preco span {
+  font-size: 34px;
+}
+.col-preco li.botao {
+  background: #fff;
+}
+button {
+  padding: 5px 20px;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid #363636; /*  cor 1    */
+  box-shadow: 0 3px #1C1C1C;/*  cor 2 */
+  background: #1C1C1C; /*  cor 3 */
+}
